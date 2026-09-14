@@ -12,8 +12,19 @@
   <meta property="og:locale" content="it_IT">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="styles.css">
+  <style id="responsive-qa-fixes">
+    section[id]{scroll-margin-top:calc(var(--header-h) + 16px)}
+    .brand{min-height:44px}
+    .nav-cta{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+    .menu-toggle{width:44px;height:44px}
+    @media (max-width:680px){
+      .hero h1{font-size:clamp(46px,13vw,56px)}
+      .footer-links{gap:8px 14px}
+      .footer-links a,.text-action,.under-link{display:inline-flex;align-items:center;min-height:44px}
+    }
+  </style>
+  <script src="script.js" defer></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -208,6 +219,5 @@
     <a href="mailto:ristorantesanafollia@libero.it">Email</a>
   </nav>
 
-  <script src="script.js" defer></script>
 </body>
 </html>
